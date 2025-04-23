@@ -31,7 +31,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/auth/signup', {
+      const response = await fetch('https://login-auth-1-api.vercel.app//auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
