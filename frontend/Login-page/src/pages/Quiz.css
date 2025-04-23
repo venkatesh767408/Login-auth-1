@@ -1,0 +1,195 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .logout:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+  }
+  
+  /* Base Styles */
+  .container {
+    width: 640px;
+    margin: 40px auto;
+    background: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container hr {
+    height: 2px;
+    border: none;
+    background: #cccccc;
+    margin: 10px 0;
+  }
+  
+  .container h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  
+  .container ol li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .container button {
+    margin: 1% auto;
+    width: 160px;
+    height: 45px;
+    background: linear-gradient(45deg, #7e57c2, #673ab7);
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .container button:hover {
+    background: linear-gradient(45deg, #9575cd, #7e57c2);
+    transform: translateY(-2px);
+  }
+  
+  .index {
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: red;
+    color: white;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .explanation {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .quiz-end {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .container h2 {
+      font-size: 24px;
+    }
+  
+    .container ol li {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .container button {
+      width: 200px;
+      font-size: 20px;
+    }
+  
+    .index {
+      font-size: 16px;
+    }
+  
+    .quiz-end h2 {
+      font-size: 22px;
+    }
+  
+    .logout {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 40px auto;
+      padding: 10px;
+    }
+  
+    .container h2 {
+      font-size: 20px;
+    }
+  
+    .container ol li {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .container button {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .index {
+      font-size: 14px;
+    }
+  
+    .quiz-end h2 {
+      font-size: 20px;
+    }
+  
+    .logout {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  
