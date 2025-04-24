@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'https://keen-tanuki-0295a4.netlify.app/', 
   credentials: true 
 }));
 
